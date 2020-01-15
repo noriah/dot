@@ -1,5 +1,5 @@
 # ZAsh ZSH framwork
-# Ashley Reuland <code@ashpup.com>
+# Ashley Reuland <code@noriah.dev>
 #
 # See LICENSE file
 
