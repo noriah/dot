@@ -1,5 +1,6 @@
-export GO_PATH="$HOME/opt/go"
+
 # Go is special so it gets a special deviation from the norm
+export GO_PATH="$HOME/opt/go"
 export GOPATH="$GO_PATH"
 
 export BREW_PATH="/opt/homebrew"

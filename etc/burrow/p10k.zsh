@@ -62,6 +62,8 @@ function _right_with_plugin() {
   typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
     command_execution_time
     background_jobs
+    battery
+    newline
   )
 
   _right_with_plugin direnv
@@ -72,20 +74,11 @@ function _right_with_plugin() {
     context ranger vim_shell vpn_ip
   )
 
-  POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS+=(
-    # load
-   newline
-  )
-
   _right_with_plugin golang go_version
 
   _right_with_plugin rust rust_version
 
   _right_with_plugin node node_version
-
-  POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS+=(
-    battery
-  )
 
   #_right_with_plugin taskwarrior
 
@@ -254,7 +247,7 @@ function _right_with_plugin() {
   typeset -g POWERLEVEL9K_BATTERY_LOW_THRESHOLD=20
   typeset -g POWERLEVEL9K_BATTERY_LOW_FOREGROUND=1
   typeset -g POWERLEVEL9K_BATTERY_{CHARGING,CHARGED}_FOREGROUND=2
-  typeset -g POWERLEVEL9K_BATTERY_HIDE_ABOVE_THRESHOLD=20
+  #typeset -g POWERLEVEL9K_BATTERY_HIDE_ABOVE_THRESHOLD=99
   typeset -g POWERLEVEL9K_BATTERY_DISCONNECTED_FOREGROUND=3
   typeset -g POWERLEVEL9K_BATTERY_STAGES=$'\uf58d\uf579\uf57a\uf57b\uf57c\uf57d\uf57e\uf57f\uf580\uf581\uf578'
   typeset -g POWERLEVEL9K_BATTERY_VERBOSE=false
